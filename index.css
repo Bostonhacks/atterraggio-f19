@@ -1,3 +1,56 @@
+/* body, html, .container-fluid {
+    height: 100%;
+} */
+
 #mainContainer{
+    height: 100%;
+    font-family: 'Roboto Slab', serif;
+}
+
+#navbar {
     background-color: #fef5f0;
+    padding: 25px 10px 10px 10px;
+}
+
+#logoTop {
+    width: 180px;
+}
+
+#mainTitle {
+    background-color: #fef5f0;
+    height: 50%;
+    vertical-align: middle;
+}
+
+#mainTitleText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#mainTitle h2{
+    color: #282561;
+    font-weight: 700;
+}
+
+#mainTitle h5{
+    color: #f05352;
+    font-weight: bold;
+}
+
+#mainTitle span{
+    color: #282561;
+}
+
+#dateBalloons{
+    width: 500px;
+}
+
+#infoTitle {
+    background-color: #fef5f0;
+}
+
+#infoArea{
+    background-color: #F05251;
 }
