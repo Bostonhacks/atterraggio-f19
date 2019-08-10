@@ -42,15 +42,72 @@
 #mainTitle span{
     color: #282561;
 }
-
 #dateBalloons{
     width: 500px;
 }
 
 #infoTitle {
     background-color: #fef5f0;
+    text-align: center;
+    color: #fef5f0;
+    font-weight: 700;
+
+    background-image: url("images/redWave.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #infoArea{
     background-color: #F05251;
+}
+
+#infoTitle{
+    color: white;
+}
+
+#infoArea {
+    color: white;
+}
+
+.infoTitle{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#subText{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    max-width: 250px;
+}
+
+#subButton{
+    background-color: #ef9b75;
+    color: white;
+
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 20px;
+}
+
+#sponText{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    max-width: 300px;
+}
+
+#sponLink{
+    text-decoration: none;
+    color: #282561;
+}
+
+#sponButton {
+    background-color: #2fb5e3;
+    color: white;
+
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 20px;
 }
