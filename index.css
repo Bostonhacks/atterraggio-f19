@@ -4,6 +4,7 @@
 
 body, html {
     background-color: #fef5f0;
+    overflow-x: hidden;
 }
 
 #mainContainer{
@@ -17,13 +18,14 @@ body, html {
 }
 
 #logoTop {
-    width: 150px;
+    width: 170px;
 }
 
 #mainTitle {
     background-color: #fef5f0;
     height: 50%;
     vertical-align: middle;
+    margin-top: -13rem;
 }
 
 #mainTitleText{
@@ -50,6 +52,29 @@ body, html {
 }
 #dateBalloons{
     width: 500px;
+}
+
+/* Mobile Landing Section Styles */
+@media (max-width: 500px){
+    #mainTitle {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    #dateBalloons {
+        width: 250px;
+    }
+
+    #mainTitleText {
+        padding: 15px;
+    }
+
+    .col-sm-1 {
+        display: none;
+    }
+
 }
 
 #infoTitle {
@@ -122,7 +147,7 @@ body, html {
     border-radius: 20px;
 }
 
-/* 3. Flair Styles */
+/* Flair Styles */
 .flair-row-1 {
     margin-top: -1%;
     position: absolute;
@@ -132,5 +157,24 @@ body, html {
 
 .flair-row-2 {
     margin-right: 13rem;
+
+}
+
+/* Mobile Flair Styles */
+@media (max-width: 500px) {
+    .flair-row-2 {
+        position: absolute;
+        width: 70px;
+    }
+
+    .zigzag {
+        left: 50%;
+    }
+
+    .circle {
+        width: 30px;
+        left: 95%;
+        top: 33px;
+    }
 
 }
