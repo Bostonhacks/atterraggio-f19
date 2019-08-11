@@ -2,18 +2,22 @@
     height: 100%;
 } */
 
+body, html {
+    background-color: #fef5f0;
+}
+
 #mainContainer{
     height: 100%;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', serif;
 }
 
 #navbar {
-    background-color: #fef5f0;
+    /* background-color: #fef5f0; */
     padding: 25px 10px 10px 10px;
 }
 
 #logoTop {
-    width: 180px;
+    width: 150px;
 }
 
 #mainTitle {
@@ -27,11 +31,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding-left: 10rem;
 }
 
-#mainTitle h2{
+#mainTitle h1{
     color: #282561;
     font-weight: 700;
+    line-height: 77%;
 }
 
 #mainTitle h5{
@@ -47,7 +53,7 @@
 }
 
 #infoTitle {
-    background-color: #fef5f0;
+    /* background-color: #fef5f0; */
     text-align: center;
     color: #fef5f0;
     font-weight: 700;
@@ -56,10 +62,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    
 }
+
 
 #infoArea{
     background-color: #F05251;
+    
 }
 
 #infoTitle{
@@ -110,4 +120,17 @@
 
     border: none;
     border-radius: 20px;
+}
+
+/* 3. Flair Styles */
+.flair-row-1 {
+    margin-top: -1%;
+    position: absolute;
+    top: -40px;
+    left: 50em;
+}
+
+.flair-row-2 {
+    margin-right: 13rem;
+
 }
