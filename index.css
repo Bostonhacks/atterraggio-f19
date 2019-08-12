@@ -9,15 +9,13 @@ body, html {
 #mainContainer{
     height: 100%;
     font-family: 'Roboto', serif;
-}
 
-#navbar {
-    /* background-color: #fef5f0; */
-    padding: 25px 10px 10px 10px;
+    overflow: hidden;
 }
 
 #logoTop {
     width: 150px;
+    margin: 25px 10px 10px 10px;
 }
 
 #mainTitle {
@@ -63,6 +61,8 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 
+    padding-top: 20%;
+    /* padding-bottom: 20%; */
     
 }
 
@@ -120,6 +120,15 @@ body, html {
 
     border: none;
     border-radius: 20px;
+}
+
+#footer {
+    background-color: #F05251;
+}
+
+#logoFooter {
+    width: 150px;
+    margin: 10px 10px 20px 10px;
 }
 
 /* 3. Flair Styles */
