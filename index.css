@@ -12,15 +12,13 @@ span {
 #mainContainer{
     height: 100%;
     font-family: 'Roboto', serif;
-}
 
-#navbar {
-    /* background-color: #fef5f0; */
-    padding: 25px 10px 10px 10px;
+    overflow: hidden;
 }
 
 #logoTop {
     width: 170px;
+    margin: 25px 10px 10px 10px;
 }
 
 #mainTitle {
@@ -122,6 +120,8 @@ span {
     background-repeat: no-repeat;
     background-size: cover;
 
+    padding-top: 20%;
+    /* padding-bottom: 20%; */
     
 }
 
@@ -181,8 +181,21 @@ span {
     border-radius: 20px;
 }
 
+<<<<<<< HEAD
 
 /* Flair Styles */
+=======
+#footer {
+    background-color: #F05251;
+}
+
+#logoFooter {
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+}
+
+/* 3. Flair Styles */
+>>>>>>> bf16eca6356cccf66588b17e8f0ceb0925954998
 .flair-row-1 {
     margin-top: -1%;
     position: absolute;
