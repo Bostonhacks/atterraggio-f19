@@ -6,7 +6,9 @@ body, html {
     background-color: #fef5f0;
     overflow-x: hidden;
 }
-
+span {
+    font-size: 1.3rem;
+}
 #mainContainer{
     height: 100%;
     font-family: 'Roboto', serif;
@@ -42,7 +44,7 @@ body, html {
     line-height: 77%;
 }
 
-#mainTitle h5{
+#mainTitle h4{
     color: #f05352;
     font-weight: bold;
 }
@@ -62,7 +64,7 @@ body, html {
 }
 
 /* Mobile Landing Section Styles */
-@media (max-width: 500px){
+@media (max-width: 500px){ 
     #mainTitle {
         display: flex;
         flex-direction: column-reverse;
@@ -71,11 +73,13 @@ body, html {
     }
 
     #dateBalloons {
-        width: 250px;
+        width: 270px;
+        margin-bottom: 3rem;
     }
 
     #mainTitleText {
         /* padding: 15px; */
+        margin-bottom: 3rem;
     }
 
     .col-sm-1 {
@@ -84,7 +88,7 @@ body, html {
 
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) and (min-width: 501px){
     #mainTitle {
         display: flex;
         flex-direction: column-reverse;
@@ -93,7 +97,7 @@ body, html {
     }
 
     #dateBalloons {
-        width: 350px;
+        width: 450px;
     }
 
     #mainTitleText {
@@ -106,6 +110,7 @@ body, html {
 
 }
 
+/* Red Wave Part */
 #infoTitle {
     /* background-color: #fef5f0; */
     text-align: center;
@@ -176,6 +181,7 @@ body, html {
     border-radius: 20px;
 }
 
+
 /* Flair Styles */
 .flair-row-1 {
     margin-top: -1%;
@@ -184,7 +190,12 @@ body, html {
     left: 50em;
 }
 
+.flair-2 {
+    margin-top: 3rem;
+    margin-left: -3rem;
+}
 .flair-row-2 {
+    
     margin-right: 13rem;
 
 }
@@ -194,6 +205,7 @@ body, html {
     .flair-row-2 {
         position: absolute;
         width: 70px;
+        
     }
 
     .zigzag {
@@ -203,6 +215,25 @@ body, html {
     .circle {
         width: 30px;
         left: 95%;
+        top: 33px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .flair-row-2 {
+        position: absolute;
+        width: 100px;
+        
+    }
+
+    .zigzag {
+        left: 30%;
+    }
+
+    .circle {
+        width: 30px;
+        left: 75%;
         top: 33px;
     }
 
