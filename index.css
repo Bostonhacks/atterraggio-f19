@@ -6,9 +6,15 @@ body, html {
     background-color: #fef5f0;
     overflow-x: hidden;
 }
+
 span {
     font-size: 1.3rem;
 }
+
+.slab {
+    font-family: 'Roboto Slab';
+}
+
 #mainContainer{
     height: 100%;
     font-family: 'Roboto', serif;
@@ -181,10 +187,8 @@ span {
     border-radius: 20px;
 }
 
-<<<<<<< HEAD
 
 /* Flair Styles */
-=======
 #footer {
     background-color: #F05251;
 }
@@ -195,7 +199,6 @@ span {
 }
 
 /* 3. Flair Styles */
->>>>>>> bf16eca6356cccf66588b17e8f0ceb0925954998
 .flair-row-1 {
     margin-top: -1%;
     position: absolute;
@@ -207,8 +210,26 @@ span {
     margin-top: 3rem;
     margin-left: -3rem;
 }
+
+.flair-3 {
+    position: absolute;
+}
+
+.bluegrid {
+    margin-left: -2rem;
+}
+
+.purplezag {
+    left: 30%;
+    top: 70%;
+}
+
+.purplecirc {
+    left: 75%;
+    bottom: 7%;
+}
+
 .flair-row-2 {
-    
     margin-right: 13rem;
 
 }
@@ -231,9 +252,13 @@ span {
         top: 33px;
     }
 
+    div .flair-3 {
+        width: 40px;
+    }
+
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 501px){
     .flair-row-2 {
         position: absolute;
         width: 100px;
@@ -248,6 +273,14 @@ span {
         width: 30px;
         left: 75%;
         top: 33px;
+    }
+
+    div .flair-3 {
+        width: 70px;
+    }
+
+    .purplezag {
+        z-index: -999;
     }
 
 }
