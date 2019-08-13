@@ -61,9 +61,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 
-    padding-top: 20%;
-    /* padding-bottom: 20%; */
-    
+    height: 150%;
 }
 
 
@@ -72,15 +70,11 @@ body, html {
     
 }
 
-#infoTitle{
-    color: white;
-}
-
 #infoArea {
     color: white;
 }
 
-.infoTitle{
+.infoAreaTitle{
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -131,12 +125,80 @@ body, html {
     margin: 10px 10px 20px 10px;
 }
 
+.flex {
+    display: flex;
+}
+
 /* 3. Flair Styles */
 .flair-row-1 {
     margin-top: -1%;
     position: absolute;
     top: -40px;
     left: 50em;
+}
+
+#flairRowTop{
+    margin-left: -3rem;
+    margin-top: 3rem;
+}
+
+#coralCircle {
+    width: 100px;
+}
+
+#purpleGridTop {
+    width: 130px;
+}
+
+#greenZig {
+    width: 150px;
+}
+
+#blueCircleTop{
+    width: 40px;
+}
+
+#blueGrid {
+    width: 100px;
+    float: left;
+    margin-top: -10em;
+}
+
+#blueCircleBottom {
+    width: 40px;
+    align-self: flex-end;
+    margin-bottom: 4em;    
+}
+
+#purpleZig {
+    width: 150px;
+}
+
+#greenGrid {
+    width: 90px;
+    float: left;
+    align-self: flex-end;
+    margin-left: -7em;
+    margin-bottom: 3em;
+}
+
+#purpleCircle{
+    width: 100px;
+    margin-top: -4em;
+    padding-bottom: 15em;
+}
+
+#greenCircle {
+    width: 60px;
+    float: left;
+    margin-left: -2.6em;
+    margin-top: 4em;
+}
+
+#coralZig {
+    width: 130px;
+    float: right;
+    margin-right: -4em;
 }
 
 .flair-row-2 {

@@ -9,20 +9,20 @@
     <body>
         <div class="container-fluid" id="mainContainer">
             <nav class="row" id="navbar">
-                    <img class="flair-row-1" src="images/CoralThinCircle.svg" width="100px"/>
+                    <img class="flair-row-1" id="coralCircle" src="images/CoralThinCircle.svg"/>
                 <div class="col-md-12">
                     <img src="/images/logoColor.png" id="logoTop" />
                     <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:absolute;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=gray" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-gray.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>
                 </div>
             </nav>
 
-            <div class="row" style="margin-left: -3rem; margin-top: 3rem;">
-                <img class="flair-row-2" src="images/PurpleCircGrid.svg" width="130px"/>
-                <img class="flair-row-2" src="images/GreenZigZag.svg" width="150px"/>
-                <img class="flair-row-2" src="images/BlueThickCircle.svg" width="40px"/>
+            <div class="row" id="flairRowTop">
+                <img class="flair-row-2" id="purpleGridTop" src="images/PurpleCircGrid.svg">
+                <img class="flair-row-2" id="greenZig" src="images/GreenZigZag.svg" />
+                <img class="flair-row-2" id="blueCircleTop" src="images/BlueThickCircle.svg" width="40px"/>
             </div>
             
-            <section class="row h-50" id="mainTitle" style="margin-top: -13rem">
+            <section class="row" id="mainTitle">
                 <!-- <div class="col-md-2"></div> -->
                 <div class="col-md-6" id="mainTitleText">
                     <h1>
@@ -51,16 +51,31 @@
             <!-- Red Wave Section -->
             
             <section class="row" id="infoTitle">
-                <div class="col-md-12">
+                <div class="col-md-2">
+                    <img src="/images/PinkSquareGrid.svg" id="blueGrid" />
+                </div>
+                <div class="col-md-1 flex">
+                    <img src="/images/BlueThickCircle.svg" id="blueCircleBottom" />
+                </div>
+                <div class="col-md">
+                    <img src="/images/PurpleZigZag.svg" id="purpleZig"/>
                     <h4>
                         Don&apos;t miss out on the fun!
                     </h4>
                 </div>
+                <div class="col-md-1 flex">
+                    <img src="/images/PurpleCircGrid.svg" id="greenGrid"/>
+                </div>
+                <div class="col-md-2">
+                    <img src="/images/PurpleThinCircle.svg" id="purpleCircle"/>
+                </div>
             </section>
             <section class="row" id="infoArea">
-                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <img src="/images/GreenThickCircle.svg" id="greenCircle" />
+                </div>
                 <div class="col-md-4">
-                    <span class="infoTitle">
+                    <span class="infoAreaTitle">
                         Subscribe
                     </span>
                     <div id="subText">
@@ -78,7 +93,7 @@
 
                 </div>
                 <div class="col-md-4">
-                    <span class="infoTitle">
+                    <span class="infoAreaTitle">
                         Interested in Sponsoring?
                     </span>
                     <div id="sponText">
@@ -97,7 +112,9 @@
                         </button>
                     </a>
                 </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <img src="/images/CoralZigZag.svg" id="coralZig" />
+                </div>
             </section>
             <footer class="row" id="footer">
                 <div class="col-md-12">
