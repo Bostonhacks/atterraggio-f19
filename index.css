@@ -15,6 +15,10 @@ span {
     font-family: 'Roboto Slab';
 }
 
+h4 {
+    font-weight: 700;
+}
+
 #mainContainer{
     height: 100%;
     font-family: 'Roboto', serif;
@@ -90,6 +94,10 @@ span {
         display: none;
     }
 
+    #logoTop {
+        width: 120px;
+    }
+
 }
 
 @media (max-width: 800px) and (min-width: 501px){
@@ -101,7 +109,7 @@ span {
     }
 
     #dateBalloons {
-        width: 450px;
+        width: 400px;
     }
 
     #mainTitleText {
@@ -120,15 +128,14 @@ span {
     text-align: center;
     color: #fef5f0;
     font-weight: 700;
+    position: relative;
 
-    background-image: url("images/redWave.svg");
+    /* background-image: url("images/redWave.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 115%; */
 
-    padding-top: 20%;
-    /* padding-bottom: 20%; */
-    
+    /* height: 150%; */
 }
 
 
@@ -137,23 +144,23 @@ span {
     
 }
 
-#infoTitle{
-    color: white;
-}
-
 #infoArea {
     color: white;
 }
 
-.infoTitle{
-    font-weight: bold;
-    font-size: 1.2em;
+.info {
+    padding-bottom: 17vw;
+}
+
+.infoAreaTitle{
+    font-weight: 700;
+    font-size: 1.5em;
 }
 
 #subText{
     margin-top: 20px;
     margin-bottom: 25px;
-    max-width: 250px;
+    max-width: 400px;
 }
 
 #subButton{
@@ -169,7 +176,7 @@ span {
 #sponText{
     margin-top: 20px;
     margin-bottom: 25px;
-    max-width: 300px;
+    max-width: 400px;
 }
 
 #sponLink{
@@ -188,6 +195,7 @@ span {
 }
 
 
+
 /* Flair Styles */
 #footer {
     background-color: #F05251;
@@ -198,6 +206,12 @@ span {
     margin: 10px 10px 20px 10px;
 }
 
+
+
+#redWave {
+    margin-top: -23vw;
+}
+
 /* 3. Flair Styles */
 .flair-row-1 {
     margin-top: -1%;
@@ -205,32 +219,77 @@ span {
     top: -40px;
     left: 50em;
 }
-
-.flair-2 {
-    margin-top: 3rem;
-    margin-left: -3rem;
-}
-
 .flair-3 {
-    position: absolute;
+    /* position: relative; */
+}
+#flairRowTop{
+    margin-left: -3rem;
+    margin-top: 3rem;
 }
 
-.bluegrid {
-    margin-left: -2rem;
+#coralCircle {
+    width: 100px;
 }
 
-.purplezag {
-    left: 30%;
-    top: 70%;
+#purpleGridTop {
+    width: 130px;
 }
 
-.purplecirc {
-    left: 75%;
-    bottom: 7%;
+#greenZig {
+    width: 150px;
+}
+
+#blueCircleTop{
+    width: 40px;
+}
+
+#blueGrid {
+    width: 100px;
+    float: left;
+    margin-top: -10em;
+    margin-left: -4rem;
+}
+
+#blueCircleBottom {
+    width: 40px;
+    align-self: flex-end;
+    margin-bottom: 4em;    
+}
+
+#purpleZig {
+    width: 150px;
+    margin-bottom: 70px;
+}
+
+#greenGrid {
+    width: 90px;
+    float: left;
+    align-self: flex-end;
+    margin-left: -7em;
+    margin-bottom: 3em;
+}
+
+#purpleCircle{
+    width: 100px;
+    margin-top: -4em;
+    padding-bottom: 15em;
+}
+
+#greenCircle {
+    width: 60px;
+    float: left;
+    margin-left: -2.6em;
+    margin-top: 4em;
+}
+
+#coralZig {
+    width: 130px;
+    float: right;
+    margin-right: -4em;
 }
 
 .flair-row-2 {
-    margin-right: 13rem;
+    margin-right: 12rem;
 
 }
 
@@ -242,45 +301,88 @@ span {
         
     }
 
-    .zigzag {
-        left: 50%;
+    #purpleGridTop {
+        width: 77px;
     }
 
-    .circle {
-        width: 30px;
-        left: 95%;
-        top: 33px;
+    #greenZig {
+        display: none;
     }
 
-    div .flair-3 {
-        width: 40px;
+    #blueGrid {
+        position: absolute;
+        top: -152px;
+        left: 2px;
+        width: 77px;
     }
 
+    #blueCircleBottom{
+        position: absolute;
+        right: 70%;
+        top: 70%; 
+    }
+
+    #purpleZig {
+        width: 77px;
+        position: absolute;
+        top: 90%;
+    }
+
+    #purpleCircle {
+        display: none;
+    }
+
+    #extratext {
+        display: none;
+    }
+
+    #redWave {
+        margin-top: -27vw;
+    }
 }
 
-@media (max-width: 800px) and (min-width: 501px){
-    .flair-row-2 {
-        position: absolute;
+@media (max-width: 800px) {
+
+    #purpleGridTop {
+        width: 97px;
+    }
+
+    #greenZig {
+        left: 50%;
         width: 100px;
-        
     }
 
-    .zigzag {
-        left: 30%;
+    #blueCircleTop {
+        position: absolute;
+        left: 90%;
+        top: 30%
     }
 
-    .circle {
-        width: 30px;
-        left: 75%;
-        top: 33px;
+    #blueGrid {
+        width: 97px;
+        float: right;
     }
 
-    div .flair-3 {
-        width: 70px;
+    #blueCircleBottom{
+        display: none;
     }
 
-    .purplezag {
-        z-index: -999;
+    #purpleZig {
+        width: 99px;
+        float: left;
+
+    }
+
+    #purpleCircle {
+        display: none;
+    }
+
+    #extratext {
+        display: none;        
+    }
+
+    #redWave {
+        margin-top: -27vw;
     }
 
 }
