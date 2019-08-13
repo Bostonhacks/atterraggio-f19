@@ -33,7 +33,7 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 10rem;
+    /* padding-left: 10rem; */
 }
 
 #mainTitle h1{
@@ -51,7 +51,14 @@ body, html {
     color: #282561;
 }
 #dateBalloons{
-    width: 500px;
+    width: 477px;
+}
+/* Centering things in mobile */
+.innerCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Mobile Landing Section Styles */
@@ -68,7 +75,29 @@ body, html {
     }
 
     #mainTitleText {
-        padding: 15px;
+        /* padding: 15px; */
+    }
+
+    .col-sm-1 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 800px){
+    #mainTitle {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    #dateBalloons {
+        width: 350px;
+    }
+
+    #mainTitleText {
+        padding: 0;
     }
 
     .col-sm-1 {
