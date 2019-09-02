@@ -4,6 +4,19 @@
 
 body, html {
     background-color: #fef5f0;
+    overflow-x: hidden;
+}
+
+span {
+    font-size: 1.3rem;
+}
+
+.slab {
+    font-family: 'Roboto Slab';
+}
+
+h4 {
+    font-weight: 700;
 }
 
 #mainContainer{
@@ -14,7 +27,7 @@ body, html {
 }
 
 #logoTop {
-    width: 150px;
+    width: 170px;
     margin: 25px 10px 10px 10px;
 }
 
@@ -22,6 +35,7 @@ body, html {
     background-color: #fef5f0;
     height: 50%;
     vertical-align: middle;
+    margin-top: -13rem;
 }
 
 #mainTitleText{
@@ -29,7 +43,7 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 10rem;
+    /* padding-left: 10rem; */
 }
 
 #mainTitle h1{
@@ -38,7 +52,7 @@ body, html {
     line-height: 77%;
 }
 
-#mainTitle h5{
+#mainTitle h4{
     color: #f05352;
     font-weight: bold;
 }
@@ -47,21 +61,82 @@ body, html {
     color: #282561;
 }
 #dateBalloons{
-    width: 500px;
+    width: 477px;
+}
+/* Centering things in mobile */
+.innerCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Mobile Landing Section Styles */
+@media (max-width: 500px){ 
+    #mainTitle {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    #dateBalloons {
+        width: 270px;
+        margin-bottom: 3rem;
+    }
+
+    #mainTitleText {
+        /* padding: 15px; */
+        margin-bottom: 3rem;
+    }
+
+    .col-sm-1 {
+        display: none;
+    }
+
+    #logoTop {
+        width: 120px;
+    }
+
+}
+
+@media (max-width: 800px) and (min-width: 501px){
+    #mainTitle {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    #dateBalloons {
+        margin-top: 122em;
+        width: 400px;
+    }
+
+    #mainTitleText {
+        padding: 0;
+    }
+
+    .col-sm-1 {
+        display: none;
+    }
+
+}
+
+/* Red Wave Part */
 #infoTitle {
     /* background-color: #fef5f0; */
     text-align: center;
     color: #fef5f0;
     font-weight: 700;
+    position: relative;
 
-    background-image: url("images/redWave.svg");
+    /* background-image: url("images/redWave.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 115%; */
 
-    height: 150%;
+    /* height: 150%; */
 }
 
 
@@ -74,15 +149,19 @@ body, html {
     color: white;
 }
 
+.info {
+    padding-bottom: 17vw;
+}
+
 .infoAreaTitle{
-    font-weight: bold;
-    font-size: 1.2em;
+    font-weight: 700;
+    font-size: 1.5em;
 }
 
 #subText{
     margin-top: 20px;
     margin-bottom: 25px;
-    max-width: 250px;
+    max-width: 400px;
 }
 
 #subButton{
@@ -98,7 +177,7 @@ body, html {
 #sponText{
     margin-top: 20px;
     margin-bottom: 25px;
-    max-width: 300px;
+    max-width: 400px;
 }
 
 #sponLink{
@@ -116,6 +195,9 @@ body, html {
     border-radius: 20px;
 }
 
+
+
+/* Flair Styles */
 #footer {
     background-color: #F05251;
 }
@@ -125,8 +207,10 @@ body, html {
     margin: 10px 10px 20px 10px;
 }
 
-.flex {
-    display: flex;
+
+
+#redWave {
+    margin-top: -23vw;
 }
 
 /* 3. Flair Styles */
@@ -136,7 +220,9 @@ body, html {
     top: -40px;
     left: 50em;
 }
-
+.flair-3 {
+    /* position: relative; */
+}
 #flairRowTop{
     margin-left: -3rem;
     margin-top: 3rem;
@@ -162,6 +248,7 @@ body, html {
     width: 100px;
     float: left;
     margin-top: -10em;
+    margin-left: -4rem;
 }
 
 #blueCircleBottom {
@@ -172,6 +259,7 @@ body, html {
 
 #purpleZig {
     width: 150px;
+    margin-bottom: 70px;
 }
 
 #greenGrid {
@@ -202,6 +290,100 @@ body, html {
 }
 
 .flair-row-2 {
-    margin-right: 13rem;
+    margin-right: 12rem;
+
+}
+
+/* Mobile Flair Styles */
+@media (max-width: 500px) {
+    .flair-row-2 {
+        position: absolute;
+        width: 70px;
+        
+    }
+
+    #purpleGridTop {
+        width: 77px;
+    }
+
+    #greenZig {
+        display: none;
+    }
+
+    #blueGrid {
+        position: absolute;
+        top: -152px;
+        left: 2px;
+        width: 77px;
+    }
+
+    #blueCircleBottom{
+        position: absolute;
+        right: 70%;
+        top: 70%; 
+    }
+
+    #purpleZig {
+        width: 77px;
+        position: absolute;
+        top: 90%;
+    }
+
+    #purpleCircle {
+        display: none;
+    }
+
+    #extratext {
+        display: none;
+    }
+
+    #redWave {
+        margin-top: -27vw;
+    }
+}
+
+@media (max-width: 800px) {
+
+    #purpleGridTop {
+        width: 97px;
+    }
+
+    #greenZig {
+        left: 50%;
+        width: 100px;
+    }
+
+    #blueCircleTop {
+        position: absolute;
+        left: 90%;
+        top: 30%
+    }
+
+    #blueGrid {
+        width: 97px;
+        float: right;
+    }
+
+    #blueCircleBottom{
+        display: none;
+    }
+
+    #purpleZig {
+        width: 99px;
+        float: left;
+
+    }
+
+    #purpleCircle {
+        display: none;
+    }
+
+    #extratext {
+        display: none;        
+    }
+
+    #redWave {
+        margin-top: -27vw;
+    }
 
 }

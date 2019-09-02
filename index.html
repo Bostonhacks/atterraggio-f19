@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="index.css"/>
     </head>
@@ -24,62 +24,75 @@
             
             <section class="row" id="mainTitle">
                 <!-- <div class="col-md-2"></div> -->
-                <div class="col-md-6" id="mainTitleText">
+                <div class="col-sm-12 col-md-6 align-self-center" id="mainTitleText">
+                    <div style="margin: 0 auto;">
                     <h1>
                         We&apos;re turning 5.
                     </h1>
-                    <h5>
+                    <h4>
                         And you&apos;re invited!
-                    </h5>
+                    </h4>
                     <br/>
                     <span>
-                        Hack with us on our 5th birthday!
-                    </span>
-                    <span>
+                        Hack with us on our 5th birthday!<br>
                         Yes, there will be cake.
                     </span>
-                    
+                    <span>
+                        
+                    </span>
+                    </div>
                 </div>
-                <div class="col-md-5" >
-                    <img src="images/hackDate.gif" id="dateBalloons"/>
+
+                <div class="col-sm-12 col-md-5" >
+                    <div class="innerCenter"><img src="images/hackDate.gif" id="dateBalloons"/></div>
                 </div>
-                <div class="col-md-1 align-self-center">
-                    <img src="images/PinkSquareGrid.svg" style="margin-left: 3rem; " width="91px" />
+                <div class="col-sm-1 col-md-1 align-self-center">
+                    <img src="images/PinkSquareGrid.svg" style="margin-left: 3rem; position:absolute; " width="91px" />
                 </div>
             </section>
 
+            <!-- <div>
+                <img class="flair-3 bluegrid" src="images/BlueSquareGrid.svg" width="107px"/>
+                <img class="flair-3 purplezag" src="images/PurpleZigZag.svg" width="150px"/>
+                <img class="flair-3 purplecirc" src="images/PurpleThinCircle.svg" width="100px"/>
+            </div> -->
+
             <!-- Red Wave Section -->
             
-            <section class="row" id="infoTitle">
+            <section class="row" id="infoTitle" >
+                
                 <div class="col-md-2">
-                    <img src="/images/PinkSquareGrid.svg" id="blueGrid" />
+                    <img src="/images/BlueSquareGrid.svg" id="blueGrid" />
                 </div>
                 <div class="col-md-1 flex">
                     <img src="/images/BlueThickCircle.svg" id="blueCircleBottom" />
                 </div>
-                <div class="col-md">
+                <div class="col-md col-sm-12">
                     <img src="/images/PurpleZigZag.svg" id="purpleZig"/>
-                    <h4>
+                    <h4 id="extratext">
                         Don&apos;t miss out on the fun!
                     </h4>
                 </div>
                 <div class="col-md-1 flex">
-                    <img src="/images/PurpleCircGrid.svg" id="greenGrid"/>
+                    <img src="/images/CoralCircGrid.svg" id="greenGrid"/>
                 </div>
                 <div class="col-md-2">
-                    <img src="/images/PurpleThinCircle.svg" id="purpleCircle"/>
+                    <img  src="/images/PurpleThinCircle.svg" id="purpleCircle"/>
                 </div>
+                <img src="images/redWave.svg" id="redWave" width="100%"/> 
             </section>
+            
             <section class="row" id="infoArea">
+
                 <div class="col-md-2">
                     <img src="/images/GreenThickCircle.svg" id="greenCircle" />
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 info">
                     <span class="infoAreaTitle">
                         Subscribe
                     </span>
                     <div id="subText">
-                        <span>
+                        <span class="slab">
                             Thank you for your interest! Keep
                             an eye out for information on our
                             2019 event!
@@ -97,7 +110,7 @@
                         Interested in Sponsoring?
                     </span>
                     <div id="sponText">
-                        <span>
+                        <span class="slab">
                             We’d love to love to have you on board.
                             Contact us at 
                             <a href="mailto:sponsor@bostonhacks.com" id="sponLink">
@@ -115,10 +128,11 @@
                 <div class="col-md-2">
                     <img src="/images/CoralZigZag.svg" id="coralZig" />
                 </div>
+               
             </section>
             <footer class="row" id="footer">
                 <div class="col-md-12">
-                    <img src="/images/logoColor.png" id="logoFooter" />
+                    <img src="/images/LogoHrzntl_White.png" id="logoFooter" />
                 </div>
             </footer>
         
