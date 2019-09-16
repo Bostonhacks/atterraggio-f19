@@ -142,7 +142,7 @@ h4 {
 
 #infoArea{
     background-color: #F05251;
-    
+    margin-top: -3px;
 }
 
 #infoArea {
@@ -200,6 +200,7 @@ h4 {
 /* Flair Styles */
 #footer {
     background-color: #F05251;
+    margin-top: -3px;
 }
 
 #logoFooter {
