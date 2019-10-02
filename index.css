@@ -388,3 +388,29 @@ h4 {
     }
 
 }
+
+#sponsorLogos {
+    background-color: #F05251;
+}
+
+#logo-title {
+    width: 100%;
+    color: white;
+}
+
+#logo-section {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.logo-cover {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.logo {
+    bottom: 0;
+    max-width:100%;
+    vertical-align: bottom;
+}
