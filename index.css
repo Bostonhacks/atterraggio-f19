@@ -407,10 +407,12 @@ h4 {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
+    margin: 1em 0 1em;
 }
 
 .logo {
     bottom: 0;
     max-width:100%;
     vertical-align: bottom;
+    margin: 0 auto;
 }
