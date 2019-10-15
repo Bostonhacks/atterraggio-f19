@@ -1,216 +1,205 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="index.css"/>
-    </head>
-    <body>
-        <div class="container-fluid" id="mainContainer">
-            <nav class="row" id="navbar">
-                    <img class="flair-row-1" id="coralCircle" src="images/CoralThinCircle.svg"/>
-                <div class="col-md-12">
-                    <img src="/images/logoColor.png" id="logoTop" />
-                    <img src="/images/redWave-01.svg" class="rotateimg180 topWave" width="100%;"/>
-                    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:absolute;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=gray" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-gray.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>
-                </div>
-            </nav>
-
-            <div class="row" id="flairRowTop">
-                <img class="flair-row-2" id="purpleGridTop" src="images/PurpleCircGrid.svg">
-                <img class="flair-row-2" id="greenZig" src="images/GreenZigZag.svg" />
-                <img class="flair-row-2" id="blueCircleTop" src="images/BlueThickCircle.svg" width="40px"/>
-            </div>
-
-            <section class="row" id="mainTitle">
-                <!-- <div class="col-md-2"></div> -->
-                <div class="col-sm-12 col-md-6 align-self-center" id="mainTitleText">
-                    <div style="margin: 0 auto;">
-                    <h1>
-                        We&apos;re turning 5.
-                    </h1>
-                    <h4>
-                        And you&apos;re invited!
-                    </h4>
-                    <br/>
-                    <!-- <span>
-                        Hack with us on our 5th birthday!<br>
-                        Yes, there will be cake.
-                    </span>
-                    <span>
-
-                    </span>
-                    </span> -->
-                    <div id="subText">
-                        <span>
-                            Registration is open! Click the link<br>below to apply.
-                        </span>
-                    </div>
-
-                    <a href="">
-                        <a href="https://my.bostonhacks.io" id="subButton">
-                            Apply here
-                        </a>
-                    </a>
-
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-md-5" >
-                    <div class="innerCenter"><img src="images/pinata.svg" id="dateBalloons"/></div>
-                </div>
-                <div class="col-sm-1 col-md-1 align-self-center">
-                    <img src="images/PinkSquareGrid.svg" style="margin-left: 3rem; position:absolute; " width="91px" />
-                </div>
-            </section>
-
-            <!-- <div>
-                <img class="flair-3 bluegrid" src="images/BlueSquareGrid.svg" width="107px"/>
-                <img class="flair-3 purplezag" src="images/PurpleZigZag.svg" width="150px"/>
-                <img class="flair-3 purplecirc" src="images/PurpleThinCircle.svg" width="100px"/>
-            </div> -->
-
-            <!-- Red Wave Section -->
-
-            <!-- <section class="row" id="infoTitle" >
-
-                <div class="col-md-2">
-                    <img src="/images/BlueSquareGrid.svg" id="blueGrid" />
-                </div>
-                <div class="col-md-1 flex">
-                    <img src="/images/BlueThickCircle.svg" id="blueCircleBottom" />
-                </div>
-                <div class="col-md col-sm-12">
-                    <img src="/images/PurpleZigZag.svg" id="purpleZig"/>
-                    <h4 id="extratext">
-                        Don&apos;t miss out on the fun!
-                    </h4>
-                </div>
-                <div class="col-md-1 flex">
-                    <img src="/images/CoralCircGrid.svg" id="greenGrid"/>
-                </div>
-                <div class="col-md-2">
-                    <img  src="/images/PurpleThinCircle.svg" id="purpleCircle"/>
-                </div>
-                <img src="images/redWave.svg" id="redWave" width="100%"/>
-            </section> -->
-
-            <section class="row" id="infoArea">
-
-                <div class="col-md-2">
-                    <img src="/images/GreenThickCircle.svg" id="greenCircle" />
-                </div>
+---
+layout: default
+title: BostonHacks
+loadFlair: true
+---
 
 
-                <div class="col-md-4 info">
-                    <!-- <span class="infoAreaTitle">
-                        Registration
-                    </span> -->
-                    
-                </div>
 
-                
-
-                
-
-
-                <div class="col-md-4" style="text-align: right">
-                    <span class="infoAreaTitle">
-                        Interested in Sponsoring?
-                    </span>
-                    <div id="sponText">
-                        <span class="slab">
-                            We&#8217;d love to have you on board.
-                            Contact us at 
-                            <a href="mailto:sponsor@bostonhacks.com" id="sponLink">
-                                sponsor@bostonhacks.io
-                            </a>
-                            or check out our sponsor document!
-                        </span>
-                    </div>
-                    <a href="/images/BostonHacks_Sponsorship2019.pdf">
-                        <button id="sponButton">
-                            Learn more
-                        </button>
-                    </a>
-                </div>
-                <div class="col-md-2">
-                    <img src="/images/CoralZigZag.svg" id="coralZig" />
-                </div>
-
-            </section>
-
-            
-
-
-            <section class="row" id="sponsorLogos">
-                <h5 class="text-center" id="logo-title">
-                    Thank you to our sponsors!
-                </h5>
-                <div class="row" id="logo-section">
-                    <div class="col-md-4 col-xs-12 logo-cover">
-                        <img src="/images/logos/AstraZeneca.PNG" class="logo" />
-                    </div>
-                    <div class="col-md-4 col-xs-12 logo-cover">
-                        <img src="/images/logos/Bose.png" class="logo" />
-                    </div>
-                    <div class="col-md-4 col-xs-12 logo-cover">
-                        <img src="/images/logos/CapOne.png" class="logo" />
-                    </div>
-                    <div class="col-md-4 col-xs-12 logo-cover">
-                        <img src="/images/logos/Google Cloud horizontal lockup 4-color printing website and 4-color tee printing only 08.14.19.png" class="logo align-bottom" />
-                    </div>
-                    <div class="col-md-4 col-xs-12 logo-cover">
-                        <img src="/images/logos/spark.png" width="50%" class="logo" />
-                    </div>
-                    <div class="col-md-4 col-xs-12 logo-cover">
-                        <img src="/images/logos/JohnHancock.png" class="logo" />
-                    </div>
-                    <div class="col-md-4 col-xs-12 logo-cover">
-                        <img src="/images/logos/stringandloop_Logo_Black.png" class="logo" />
-                    </div>
-                    <div class="col-md-4 col-xs-12 logo-cover">
-                        <img src="/images/logos/Raytheon.svg.png" class="logo" />
-                    </div>
-                    <div class="col-md-4 col-xs-12 logo-cover">
-                        <img src="/images/logos/twilio-logo-red.svg" class="logo" />
-                    </div>
-                   
-                </div>
-            </section>
-
-            <!-- Red Wave Section -->
-            
-            <section class="row" id="infoTitle" >
-                
-                <div class="col-md-2">
-                    <img src="/images/BlueSquareGrid.svg" id="blueGrid" />
-                </div>
-                <div class="col-md-1 flex">
-                    <img src="/images/BlueThickCircle.svg" id="blueCircleBottom" />
-                </div>
-                <div class="col-md col-sm-12">
-                    <img src="/images/PurpleZigZag.svg" id="purpleZig"/>
-                    <h4 id="extratext">
-                    </h4>
-                </div>
-                <div class="col-md-1 flex">
-                    <img src="/images/CoralCircGrid.svg" id="greenGrid"/>
-                </div>
-                <div class="col-md-2">
-                    <img  src="/images/PurpleThinCircle.svg" id="purpleCircle"/>
-                </div>
-                <img src="images/redWave-01.svg" id="redWave" width="100%"/>
-            </section>
-
-
-            <footer class="row" id="footer">
-                <div class="col-md-12">
-                    <img src="/images/LogoHrzntl_White.png" id="logoFooter" />
-                </div>
-            </footer>
-
+<div class="row align-items-center printHide">
+    <div class="col-sm order-sm-2"><img src="/images/pinata.svg" class='llama' alt="Llama in Cartoon Form">
     </div>
-    </body>
-</html>
+    <div class="col-10 offset-1 col-sm order-sm-1">
+        <h2>We're turning 5.</h2>
+        <h3>And you're invited!</h3>
+        <br>
+        <span>Registration is open! Click the link below to apply.</span>
+        <br><br>
+        <a class="btn btn-primary tan" href="https://my.bostonhacks.io" role="button">Apply here</a>
+    </div>
+</div>
+
+<div class="row printHide">
+    <div class="col-10 offset-1 text-right">
+        <h2>Interested in Sponsoring?</h2>
+        <span> We’d love to have you on board. Contact us at <a
+                href="mailto:sponsor@bostonhacks.io">sponsor@bostonhacks.io</a> or check out our sponsor
+            document!</span>
+        <br><br>
+        <a class="btn btn-primary blue" href="/images/BostonHacks_Sponsorship2019.pdf" role="button">Learn
+            more</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-10 offset-1">
+        <h2>Event Schedule</h2>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-11 offset-1 col-md-6 offset-md-1">
+        <table class="table table-borderless tealTime">
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th>Saturday, November 16th</th>
+                </tr>
+                <tr>
+                    <td>9:00 AM</td>
+                    <td>Check in</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td>Opening Ceremony</td>
+                </tr>
+                <tr>
+                    <td>12:00 PM</td>
+                    <td>Hacking Starts</td>
+                </tr>
+                <tr>
+                    <td>12:30 PM</td>
+                    <td>Lunch</td>
+                </tr>
+                <tr>
+                    <td>6:30 PM</td>
+                    <td>Dinner</td>
+                </tr>
+                <tr>
+                    <td>12:00 AM</td>
+                    <td>Midnight Snack</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-11 offset-1 col-md-5 offset-md-0">
+        <table class="table table-borderless blueTime">
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th>Sunday, November 17th</th>
+                </tr>
+                <tr>
+                    <td>8:00 AM</td>
+                    <td>Breakfast</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td>Submissions Due</td>
+                </tr>
+                <tr>
+                    <td>12:00 PM</td>
+                    <td>Lunch</td>
+                </tr>
+                <tr>
+                    <td>12:30 PM</td>
+                    <td>Judging</td>
+                </tr>
+                <tr>
+                    <td>6:30 PM</td>
+                    <td>Closing Ceremony</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="row align-items-center">
+    <div class="col-10 offset-1">
+        <h2>Tracks and Workshops</h2>
+    </div>
+    <div class="col-11 offset-1 col-lg-5 offset-lg-1">
+        <h3>Next Gen</h3>
+        <p>School only prepares us for so much. In service of the next generation, think either about tools
+            you wish you had to help you learn difficult concepts school or the skills you wish you had
+            entering the real world.</p>
+    </div>
+    <div class="col-md-6 offset-md-3 col-lg-6 offset-lg-0"><img src="/images/pinata.svg" class='llama'
+            alt="Llama in Cartoon Form">
+    </div>
+    <div class="col-11 offset-1 col-lg-6 offset-lg-6">
+        <h3>Problem for the Ages</h3>
+        <p>It's easy to think that some problems are too big to solve today. Instead of leaving them for the
+            future, reflect on how we can build products that tackle issues that will be affecting us for
+            generations to come. Examples include climate change, the refugee crisis, and racial & gender
+            equity.</p>
+    </div>
+    <div class="col-11 offset-1 col-lg-5">
+        <h3>Back to the Future</h3>
+        <p>As you get older, doing ordinary things can seem like an impossible task. Help your future self
+            out by developing tools that make accomplishing day-to-day tasks for elderly people easier than
+            ever.</p>
+    </div>
+</div>
+
+
+<div class="row text-right noBottom">
+    <div class="col-10 offset-1 ">
+        <h2>Frequently Asked Questions</h2>
+        <br>
+    </div>
+</div>
+
+<div class="row noBottom text-right text-sm-left">
+    <div class="col-sm-1"></div>
+    <div class="col-10 offset-1 offset-sm-0 col-sm-3">
+        <h3 class="blueText">Where is it?</h3>
+        <p>George Sherman Union, 2nd Floor in Metcalf Hall at 775 Commonwealth Avenue, Boston, MA, 02215.</p>
+    </div>
+    <div class="col-10 offset-1 offset-sm-0 col-sm-4">
+        <h3 class="blueText">Who's coming?</h3>
+        <p>We expect 400 to 450 hackers from all over North America to attend BostonHacks.</p>
+    </div>
+    <div class="col-10 offset-1 offset-sm-0 col-sm-4">
+        <h3 class="blueText">Who can attend?</h3>
+        <p>All students are welcome. Unfortunately, we will not be able to accommodate students under 18 this year.</p>
+    </div>
+</div>
+<div class="row noBottom text-right text-sm-left">
+    <div class="col-sm-1"></div>
+    <div class="col-10 offset-1 offset-sm-0 col-sm-3">
+        <h3 class="blueText">Do I need experience?</h3>
+        <p>No experience necessary. We will have plenty of mentors and resources, along with several workshops targeted
+            for beginners. Come learn and experience your first hackathon at BostonHacks!</p>
+    </div>
+    <div class="col-10 offset-1 offset-sm-0 col-sm-4">
+        <h3 class="blueText">What should I bring?</h3>
+        <p>You should bring your laptop, phone, chargers, toiletries, and optionally a sleeping bag. All food and other
+            accommodations will be taken care of.</p>
+    </div>
+    <div class="col-10 offset-1 offset-sm-0 col-sm-4">
+        <h3 class="blueText">Can we form teams?</h3>
+        <p>Of course you can! We encourage people to work in teams of up to 5 people. You may opt-in to team formation
+            during registration which will match you with an ideal team. You can work alone, but it won't be the same.
+        </p>
+    </div>
+</div>
+<div class="row text-right text-sm-left">
+    <div class="col-sm-1"></div>
+    <div class="col-10 offset-1 offset-sm-0 col-sm-3">
+        <h3 class="blueText">Does it cost anything?</h3>
+        <p>BostonHacks is 100% free. You don't have to spend a dime!</p>
+    </div>
+    <div class="col-10 offset-1 offset-sm-0 col-sm-4">
+        <h3 class="blueText">Will there be travel reimbursements?</h3>
+        <p>I DONT KNOW.</p>
+    </div>
+    <div class="col-10 offset-1 offset-sm-0 col-sm-4">
+        <h3 class="blueText">Are there any rules?</h3>
+        <p>We want to ensure a positive experience for all participants. We encourage you to read the Code of Conduct.
+        </p>
+    </div>
+</div>
+
+<div class="row align-items-center text-center sponsors">
+    <div class="col-6 offset-3 text-center printHide">
+        <h2>Thank you to our sponsors!</h2>
+    </div>
+    <div class="col-sm-4"><img alt="AstraZeneca Logo" class="img-fluid" src="/images/logos/AstraZeneca.PNG" /></div>
+    <div class="col-sm-4"><img alt="Bose Logo" class="img-fluid" src="/images/logos/Bose.png" /></div>
+    <div class="col-sm-4"><img alt="Capital One Logo" class="img-fluid" src="/images/logos/CapOne.png" /></div>
+    <div class="col-sm-4"><img alt="Google Cloud Logo" class="img-fluid" src="/images/logos/Google Cloud horizontal lockup 4-color printing website and 4-color tee printing only 08.14.19.png" /></div>
+    <div class="col-sm-4"><img alt="Spark! Logo" class="img-fluid makeSmaller" src="/images/logos/spark.png" /></div>
+    <div class="col-sm-4"><img alt="John Hancock Logo" class="img-fluid" src="/images/logos/JohnHancock.png" /></div>
+    <div class="col-sm-4"><img alt="string&&loop Logo" class="img-fluid" src="/images/logos/stringandloop_Logo_Black.png" /></div>
+    <div class="col-sm-4"><img alt="Raytheon Logo" class="img-fluid" src="/images/logos/Raytheon.svg.png" /></div>
+    <div class="col-sm-4"><img alt="Twilio Logo" class="img-fluid" src="/images/logos/twilio-logo-red.svg"></div>
+</div>

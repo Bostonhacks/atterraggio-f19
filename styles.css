@@ -1,0 +1,202 @@
+html {
+    background-color: #f05251; 
+}
+
+body {
+    background-color: #fef5f0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #282561;
+}
+
+header, main, footer {
+    z-index: 3;
+    position: relative;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+body::after {
+    background-color: green;
+}
+
+.flairs {
+    z-index: 2;
+}
+
+.topWave {
+    transform: rotateX(180deg);
+    z-index: 1;
+}
+
+.tan {
+    background-color: #ef9b75;
+    border: none;
+}
+
+.tan:hover {
+    background-color: #bf7554;
+    border: none;
+}
+
+.blue {
+    background-color: #2fb5e3;
+    border: none;
+}
+
+.blue:hover {
+    background-color: #228aae;
+    border: none;
+}
+
+.pink {
+    background-color: #f05251;
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 15px;    
+}
+
+h2 {
+    color: #282561;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+h3 {
+    color: #f05352;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+span {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    word-wrap: break-word;
+}
+
+.row {
+    margin-bottom: 100px;
+}
+
+.noBottom {
+    margin-bottom: 0;
+}
+
+footer {
+    padding: 25px 0;
+}
+
+tr :first-child {
+    text-align: right;
+    font-weight: 700;
+}
+
+.tealTime tr :first-child {
+    color:#1c998b;
+}
+
+.blueTime tr :first-child {
+    color:#2fb5e3;
+}
+
+
+table {
+    font-size: 1.25em;
+}
+
+
+.llama:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: rotateZ(0deg);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+@keyframes shake {
+    10%, 90% {
+      transform: rotateZ(5deg);
+    }
+    20%, 80% {
+      transform: rotateZ(-5deg);
+    }
+    30%, 50%, 70% {
+      transform: rotateZ(10deg);
+    }
+    40%, 60% {
+      transform:rotateZ(-10deg);
+    }
+  }
+
+
+  .blueText {
+      color: #2fb5e3;
+  }
+
+.sponsors img {
+    max-height: 250px;
+    max-width: 90%;
+}
+
+
+  .flairs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,.0);
+    
+  }
+
+  .flairs img {
+    transition: opacity 1.5s ease-in-out;
+    opacity: 0;
+  }
+  .fadeIn {
+      opacity: 1 !important;
+  }
+
+  .flairs img {
+      width: 11vw;
+      /* max-width: 80px; */
+  }
+
+  .makeSmaller {
+      padding: 25px;
+  }
+
+h3.blueText {
+    word-break: break-all;
+}
+
+  @media print {
+    h1,h2,h3,h4,h5,h6 {
+        color: black;
+    }
+    body, html {
+        background: white;
+        color: black;
+    }
+    header, footer, img {
+        display: none;
+
+    }
+    .row {
+        margin-bottom: 0;
+    }
+    body {
+        font-size: 12px;
+    }
+
+    .printHide {
+        display: none;
+    }
+    /* main .container :first-child {
+        display: none;
+    } */
+
+
+  }
