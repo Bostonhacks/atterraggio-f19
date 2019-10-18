@@ -160,7 +160,8 @@ table {
   }
 
   .flairs img {
-      width: 11vw;
+      height: 15vh;
+      position: absolute;
       /* max-width: 80px; */
   }
 
@@ -169,7 +170,7 @@ table {
   }
 
 h3.blueText {
-    word-break: break-all;
+    word-wrap: break-word;
 }
 
   @media print {
@@ -194,9 +195,13 @@ h3.blueText {
     .printHide {
         display: none;
     }
-    /* main .container :first-child {
-        display: none;
-    } */
+}
 
+.FAQ {
+    padding-left: 8.333%; /* must do this to sim left col-1*/
+}
 
-  }
+.generateFlairsHere {
+    height: 15vh;
+    width: 100%;
+}
