@@ -170,6 +170,10 @@ table {
       padding: 25px;
   }
 
+  .makeLarger {
+      max-width: 100%;
+  }
+
 h3.blueText {
     word-wrap: break-word;
 }
