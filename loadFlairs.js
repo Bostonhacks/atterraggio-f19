@@ -1,13 +1,16 @@
 let flairs, f;
 let maxFlairs;
+let ogCoords = {};
 
 window.addEventListener("load", sizeFlairs, false);
 
-
+window.addEventListener("resize", reSizeFlairs, false);
 
 function sizeFlairs() {
     let docHeight = document.documentElement.offsetHeight;
     let docWidth = window.innerWidth;
+    ogCoords.width = docWidth;
+    ogCoords.height = docHeight;
     flairs = document.querySelector('.flairs');
     maxFlairs = flairs.childElementCount;
     flairs.style.height = docHeight + "px";
@@ -22,8 +25,19 @@ function sizeFlairs() {
         flair.style.top = randHeight + "px";
         flair.style.opacity = "1";
     }
+    
 }
   
+function reSizeFlairs(e) {
+    let docWidth = window.innerWidth;
+    if(docWidth!=ogCoords.width) {
+        ogCoords.width = docWidth;
+        sizeFlairs();
+    }
+    
+
+}
+
 
 // function elementInViewport(el) {
 //     var height = el.offsetHeight;
