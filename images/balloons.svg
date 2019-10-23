@@ -29,8 +29,8 @@
 }
 
 #g824 {
-    animation: balloon2 4200ms linear infinite;
-    -webkit-animation: balloon2 4200ms linear infinite;
+    animation: balloon2 7200ms linear infinite;
+    -webkit-animation: balloon2 7200ms linear infinite;
 }
 
 
