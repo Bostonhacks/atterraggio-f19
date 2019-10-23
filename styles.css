@@ -214,4 +214,5 @@ h3.blueText {
 
 .balloons {
     max-width: 100%;
+    max-height: 60vh;
 }
